@@ -46,3 +46,24 @@ void bubbleSortArray()
                 element[j] = element[j + 1];
                 element[j + 1] = temp;
             }
+        }
+        pass++;
+    } while (pass <= nPanjang - 1);
+}
+
+void display()
+{
+    cout << "=============================\n";
+    cout << "Elemen array setelah diurutkan (Asc)\n";
+    cout << "=============================\n";
+    
+    for (int j = 0; j < nPanjang; j++)
+    {
+        cout << element[j];
+        if (j < nPanjang - 1)
+        {
+            cout << " -> ";
+        }
+    }
+    cout << endl;
+}
