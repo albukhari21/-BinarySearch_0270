@@ -30,3 +30,10 @@ void input()
     {
         cout << "Data ke-" << i + 1 << ": ";
         cin >> element[i];
+    }
+}
+
+void bubbleSortArray()
+{
+    int pass = 1;
+    do
